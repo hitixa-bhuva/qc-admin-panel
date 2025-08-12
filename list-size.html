@@ -1,310 +1,417 @@
-﻿<!doctype html>
-<html lang="en" class="preset-1" data-pc-sidebar-caption="true" data-pc-layout="vertical" data-pc-direction="ltr"
-      dir="ltr" data-pc-theme_contrast="" data-pc-theme="light"><!-- [Head] start -->
+﻿<!DOCTYPE html>
+<html lang="en" class="preset-1" data-pc-sidebar-caption="true" data-pc-layout="vertical" data-pc-direction="ltr" dir="ltr" data-pc-theme_contrast="" data-pc-theme="light">
+    <!-- [Head] start -->
+    <head>
+        <title>DataTable Styling | Able Pro Dashboard Template</title>
+        <!-- [Meta] -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Able Pro is trending dashboard template made using Bootstrap 5 design framework. Able Pro is available in Bootstrap, React, CodeIgniter, Angular,  and .net Technologies." />
+        <meta name="keywords" content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard" />
+        <meta name="author" content="Phoenixcoded" />
+        <!-- [Favicon] icon -->
+        <link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon" />
+        <!-- [Page specific CSS] start -->
+        <!-- data tables css -->
+        <link rel="stylesheet" href="./assets/css/plugins/dataTables.bootstrap5.min.css" />
+        <!-- [Page specific CSS] end -->
+        <!-- [Font] Family -->
+        <link rel="stylesheet" href="./assets/fonts/inter/inter.css" id="main-font-link" />
+        <!-- [phosphor Icons] https://phosphoricons.com/ -->
+        <link rel="stylesheet" href=" ./assets/fonts/phosphor/duotone/style.css" />
+        <!-- [Tabler Icons] https://tablericons.com -->
+        <link rel="stylesheet" href="./assets/fonts/tabler-icons.min.css" />
+        <!-- [Feather Icons] https://feathericons.com -->
+        <link rel="stylesheet" href="./assets/fonts/feather.css" />
+        <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+        <link rel="stylesheet" href="./assets/fonts/fontawesome.css" />
+        <!-- [Material Icons] https://fonts.google.com/icons -->
+        <link rel="stylesheet" href="./assets/fonts/material.css" />
+        <!-- [Template CSS Files] -->
+        <link rel="stylesheet" href="./assets/css/style.css" id="main-style-link" />
+    </head>
+    <!-- [Head] end --><!-- [Body] Start -->
 
-<head>
-      <title>DataTable Styling | Able Pro Dashboard Template</title><!-- [Meta] -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description"
-            content="Able Pro is trending dashboard template made using Bootstrap 5 design framework. Able Pro is available in Bootstrap, React, CodeIgniter, Angular,  and .net Technologies.">
-      <meta name="keywords"
-            content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard">
-      <meta name="author" content="Phoenixcoded"><!-- [Favicon] icon -->
-      <link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon">
-      <!-- [Page specific CSS] start --><!-- data tables css -->
-      <link rel="stylesheet" href="./assets/css/plugins/dataTables.bootstrap5.min.css">
-      <!-- [Page specific CSS] end --><!-- [Font] Family -->
-      <link rel="stylesheet" href="./assets/fonts/inter/inter.css" id="main-font-link">
-      <!-- [phosphor Icons] https://phosphoricons.com/ -->
-      <link rel="stylesheet" href=" ./assets/fonts/phosphor/duotone/style.css">
-      <!-- [Tabler Icons] https://tablericons.com -->
-      <link rel="stylesheet" href="./assets/fonts/tabler-icons.min.css">
-      <!-- [Feather Icons] https://feathericons.com -->
-      <link rel="stylesheet" href="./assets/fonts/feather.css">
-      <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
-      <link rel="stylesheet" href="./assets/fonts/fontawesome.css">
-      <!-- [Material Icons] https://fonts.google.com/icons -->
-      <link rel="stylesheet" href="./assets/fonts/material.css"><!-- [Template CSS Files] -->
-      <link rel="stylesheet" href="./assets/css/style.css" id="main-style-link">
-</head><!-- [Head] end --><!-- [Body] Start -->
-
-<body><!-- [ Pre-loader ] start -->
-      <div class="loader-bg fixed inset-0 bg-white dark:bg-themedark-cardbg z-[1034]">
+    <body>
+        <!-- [ Pre-loader ] start -->
+        <div class="loader-bg fixed inset-0 bg-white dark:bg-themedark-cardbg z-[1034]">
             <div class="loader-track h-[5px] w-full inline-block absolute overflow-hidden top-0 bg-primary-500/10">
-                  <div
-                        class="loader-fill w-[300px] h-[5px] bg-primary-500 absolute top-0 left-0 transition-[transform_0.2s_linear] origin-left animate-[2.1s_cubic-bezier(0.65,0.815,0.735,0.395)_0s_infinite_normal_none_running_loader-animate]">
-                  </div>
+                <div
+                    class="loader-fill w-[300px] h-[5px] bg-primary-500 absolute top-0 left-0 transition-[transform_0.2s_linear] origin-left animate-[2.1s_cubic-bezier(0.65,0.815,0.735,0.395)_0s_infinite_normal_none_running_loader-animate]"
+                ></div>
             </div>
-      </div><!-- [ Pre-loader ] End --><!-- [ Sidebar Menu ] start -->
-      <nav class="pc-sidebar">
+        </div>
+        <!-- [ Pre-loader ] End --><!-- [ Sidebar Menu ] start -->
+        <nav class="pc-sidebar">
             <div class="navbar-wrapper">
-                  <div class="m-header flex items-center py-4 px-6 h-header-height"><a href="index.html"
-                              class="b-brand flex items-center gap-3"><!-- ========   Change your logo from here   ============ -->
-                              <img src="./assets/images/logo-dark.svg" class="img-fluid logo-lg" alt="logo"> <span
-                                    class="badge bg-success-500/10 text-success-500 rounded-full theme-version">v1.1.0</span></a>
-                  </div>
-                  <div class="navbar-content h-[calc(100vh_-_74px)] py-2.5">
-                        
-                          <ul class="pc-navbar">
-                           
-                             <li class="pc-item pc-hasmenu">
-                                  <a href="#!" class="pc-link">
-                                    <span class="pc-micon">
-                                      <span class="pc-micon"><svg class="pc-icon">
-                                                      <use xlink:href="#custom-layer"></use>
-                                                </svg> </span>
-                                    </span>
-                                    <span class="pc-mtext">Size</span>
-                                    <span class="pc-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
-                                  </a>
-                                  <ul class="pc-submenu" style="display: none;">
-                                    <li class="pc-item"><a class="pc-link" href="list-size.html">List Size</a></li>
-                                    <li class="pc-item"><a class="pc-link" href="add-size.html">Add Size</a></li>
-                                  </ul>
-                                </li>
-                              
-                              <li class="pc-item">
-                                <a href="list-inspectector.html" class="pc-link">
-                                  <span class="pc-micon"><svg class="pc-icon">
-                                                      <use xlink:href="#custom-user"></use>
-                                                </svg> </span>
-                                  <span class="pc-mtext">Inspector</span>
-                                </a>
-                              </li>
-
-                              <li class="pc-item">
-                                <a href="list-inspection-place.html" class="pc-link">
-                                  <span class="pc-micon"><svg class="pc-icon">
-                                                      <use xlink:href="#custom-story"></use>
-                                                </svg> </span>
-                                  <span class="pc-mtext">Inspection</span>
-                                </a>
-                              </li>
-                              
-                              <li class="pc-item">
-                                <a href="add-generate-report.html" class="pc-link">
-                                  <span class="pc-micon"><svg class="pc-icon">
-                                                      <use xlink:href="#custom-document"></use>
-                                                </svg> </span>
-                                  <span class="pc-mtext">Generate Report</span>
-                                </a>
-                              </li>
-
-                              <li class="pc-item">
-                                <a href="list-generate-report.html" class="pc-link">
-                                  <span class="pc-micon"><svg class="pc-icon">
-                                                      <use xlink:href="#custom-bill"></use>
-                                                </svg> </span>
-                                  <span class="pc-mtext">Working Report</span>
-                                </a>
-                              </li>
-
-                              <li class="pc-item">
-                                <a href="list-complate-reports.html" class="pc-link">
-                                  <span class="pc-micon"><svg class="pc-icon">
-                                                      <use xlink:href="#custom-24-support"></use>
-                                                </svg> </span>
-                                  <span class="pc-mtext">Complete Report</span>
-                                </a>
-                              </li>
-                        </ul>
-                  </div>
+                <div class="m-header flex items-center py-4 px-6 h-header-height">
+                    <a href="../dashboard/index.html" class="b-brand flex items-center gap-3">
+                        <!-- ========   Change your logo from here   ============ -->
+                        <img src="./assets/images/logo-dark.svg" class="img-fluid logo-lg" alt="logo" /> <span class="badge bg-success-500/10 text-success-500 rounded-full theme-version">v1.1.0</span>
+                    </a>
+                </div>
+                <div class="navbar-content h-[calc(100vh_-_74px)] py-2.5">
+                    <ul class="pc-navbar">
+                        <li class="pc-item">
+                            <a href="list-size.html" class="pc-link">
+                                <span class="pc-micon">
+                                    <svg class="pc-icon">
+                                            <use xlink:href="#custom-layer"></use>
+                                        </svg>
+                                </span>
+                                <span class="pc-mtext">Size</span>
+                            </a>
+                        </li>
+                        <li class="pc-item">
+                            <a href="list-inspectector.html" class="pc-link">
+                                <span class="pc-micon">
+                                    <svg class="pc-icon">
+                                        <use xlink:href="#custom-user"></use>
+                                    </svg>
+                                </span>
+                                <span class="pc-mtext">Inspector</span>
+                            </a>
+                        </li>
+                        <li class="pc-item">
+                            <a href="list-inspection-place.html" class="pc-link">
+                                <span class="pc-micon">
+                                    <svg class="pc-icon">
+                                        <use xlink:href="#custom-story"></use>
+                                    </svg>
+                                </span>
+                                <span class="pc-mtext">Inspection Place</span>
+                            </a>
+                        </li>
+                        <li class="pc-item">
+                            <a href="add-generate-report.html" class="pc-link">
+                                <span class="pc-micon">
+                                    <svg class="pc-icon">
+                                        <use xlink:href="#custom-document"></use>
+                                    </svg>
+                                </span>
+                                <span class="pc-mtext">Generate Report</span>
+                            </a>
+                        </li>
+                        <li class="pc-item">
+                            <a href="list-generate-report.html" class="pc-link">
+                                <span class="pc-micon">
+                                    <svg class="pc-icon">
+                                        <use xlink:href="#custom-bill"></use>
+                                    </svg>
+                                </span>
+                                <span class="pc-mtext">Working Report</span>
+                            </a>
+                        </li>
+                        <li class="pc-item">
+                            <a href="list-complate-reports.html" class="pc-link">
+                                <span class="pc-micon">
+                                    <svg class="pc-icon">
+                                        <use xlink:href="#custom-24-support"></use>
+                                    </svg>
+                                </span>
+                                <span class="pc-mtext">Complete Report</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-      </nav><!-- [ Sidebar Menu ] end --><!-- [ Header Topbar ] start -->
-       <header class="pc-header">
-            <div class="header-wrapper flex max-sm:px-[15px] px-[25px] grow"><!-- [Mobile Media Block] start -->
-                  <div class="me-auto pc-mob-drp">
-                        <ul class="inline-flex *:min-h-header-height *:inline-flex *:items-center">
-                              <!-- ======= Menu collapse Icon ===== -->
-                              <li class="pc-h-item pc-sidebar-collapse max-lg:hidden lg:inline-flex"><a href="#"
-                                          class="pc-head-link ltr:!ml-0 rtl:!mr-0" id="sidebar-hide"><i
-                                                class="ti ti-menu-2"></i></a></li>
-                              <li class="pc-h-item pc-sidebar-popup lg:hidden"><a href="#"
-                                          class="pc-head-link ltr:!ml-0 rtl:!mr-0" id="mobile-collapse"><i
-                                                class="ti ti-menu-2 text-2xl leading-none"></i></a></li>
-                        </ul>
-                  </div><!-- [Mobile Media Block end] -->
-                  <div class="ms-auto">
-                        <ul class="inline-flex *:min-h-header-height *:inline-flex *:items-center">
-                             
-                              <li class="dropdown pc-h-item header-user-profile"><a
-                                          class="pc-head-link dropdown-toggle arrow-none me-0" data-pc-toggle="dropdown"
-                                          href="#" role="button" aria-haspopup="false" data-pc-auto-close="outside"
-                                          aria-expanded="false"><img src="./assets/images/user/avatar-2.jpg"
-                                                alt="user-image" class="user-avtar w-10 h-10 rounded-full"></a>
-                                    <div  
-                                          class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown p-2">
-                                          <div class="dropdown-header flex items-center justify-between py-4 px-5">
-                                                <h5 class="m-0">Profile</h5>
-                                          </div>
-                                          <div class="dropdown-body py-4 px-5">
-                                                <div class="profile-notification-scroll position-relative"
-                                                      style="max-height: calc(100vh - 225px)">
-                                                      <div class="flex mb-1 items-center">
-                                                            <div class="shrink-0"><img
-                                                                        src="./assets/images/user/avatar-2.jpg"
-                                                                        alt="user-image" class="w-10 rounded-full">
-                                                            </div>
-                                                            <div class="grow ms-3">
-                                                                  <h6 class="mb-1">Carson Darrin 🖖</h6><span><a
-                                                                              href="../../cdn-cgi/l/email-protection.html"
-                                                                              class="__cf_email__"
-                                                                              data-cfemail="a0c3c1d2d3cfce8ec4c1d2d2c9cee0c3cfcdd0c1ced98ec9cf">[email&#160;protected]</a></span>
-                                                            </div>
-                                                      </div>
-                                                      <hr class="border-secondary-500/10 my-4">
-                                                      
-                                                      
-                                                </div>
-                                          </div>
+        </nav>
+        <!-- [ Sidebar Menu ] end --><!-- [ Header Topbar ] start -->
+        <header class="pc-header">
+            <div class="header-wrapper flex max-sm:px-[15px] px-[25px] grow">
+                <!-- [Mobile Media Block] start -->
+                <div class="me-auto pc-mob-drp">
+                    <ul class="inline-flex *:min-h-header-height *:inline-flex *:items-center">
+                        <!-- ======= Menu collapse Icon ===== -->
+                        <li class="pc-h-item pc-sidebar-collapse max-lg:hidden lg:inline-flex">
+                            <a href="#" class="pc-head-link ltr:!ml-0 rtl:!mr-0" id="sidebar-hide"><i class="ti ti-menu-2"></i></a>
+                        </li>
+                        <li class="pc-h-item pc-sidebar-popup lg:hidden">
+                            <a href="#" class="pc-head-link ltr:!ml-0 rtl:!mr-0" id="mobile-collapse"><i class="ti ti-menu-2 text-2xl leading-none"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- [Mobile Media Block end] -->
+                <div class="ms-auto">
+                    <ul class="inline-flex *:min-h-header-height *:inline-flex *:items-center"> 
+                        <li class="dropdown pc-h-item header-user-profile">
+                            <a class="pc-head-link dropdown-toggle arrow-none me-0" data-pc-toggle="dropdown" href="#" role="button" aria-haspopup="false" data-pc-auto-close="outside" aria-expanded="false">
+                                <img src="./assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar w-10 h-10 rounded-full" />
+                            </a>
+
+                            <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown p-2">
+                                <div class="dropdown-header flex items-center justify-between py-4 px-5">
+                                    <h5 class="m-0">Profile</h5>
+                                </div>
+                                <div class="dropdown-body py-4 px-5">
+                                    <div class="profile-notification-scroll position-relative" style="max-height: calc(100vh - 225px);">
+                                        <div class="flex mb-1 items-center">
+                                            <div class="shrink-0"><img src="./assets/images/user/avatar-2.jpg" alt="user-image" class="w-10 rounded-full" /></div>
+                                            <div class="grow ms-3">
+                                                <h6 class="mb-1">Carson Darrin 🖖</h6>
+                                                <span><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="a0c3c1d2d3cfce8ec4c1d2d2c9cee0c3cfcdd0c1ced98ec9cf">[email&#160;protected]</a></span>
+                                            </div>
+                                        </div>
+                                        <hr class="border-secondary-500/10 my-4" />
+                                        
                                     </div>
-                              </li>
-                        </ul>
-                  </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-      </header>
-      <div class="offcanvas pc-announcement-offcanvas offcanvas-end" tcabindex="-1" id="announcement"
-            aria-labelledby="announcementLabel">
+        </header>
+        <div class="offcanvas pc-announcement-offcanvas offcanvas-end" tcabindex="-1" id="announcement" aria-labelledby="announcementLabel">
             <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="announcementLabel">What's new announcement?</h5><button
-                        data-pc-dismiss="#announcement"
-                        class="text-lg flex items-center justify-center rounded w-7 h-7 text-secondary-500 hover:bg-danger-500/10 hover:text-danger-500"><i
-                              class="ti ti-x"></i></button>
+                <h5 class="offcanvas-title" id="announcementLabel">What's new announcement?</h5>
+                <button data-pc-dismiss="#announcement" class="text-lg flex items-center justify-center rounded w-7 h-7 text-secondary-500 hover:bg-danger-500/10 hover:text-danger-500"><i class="ti ti-x"></i></button>
             </div>
             <div class="offcanvas-body announcement-scroll-block">
-                  <p class="mb-3">Today</p>
-                  <div class="card mb-3">
-                        <div class="card-body">
-                              <div class="items-center flex wrap gap-2 mb-3">
-                                    <div class="badge text-success-500 bg-success-500/10 text-sm">Big News</div>
-                                    <p class="mb-0">2 min ago</p><span class="badge bg-warning-500 p-1"></span>
-                              </div>
-                              <h5 class="mb-3">Able Pro is Redesigned</h5>
-                              <p class="text-muted mb-3">Able Pro is completely renowed with high aesthetics User
-                                    Interface.</p><img src="./assets/images/layout/img-announcement-1.png" alt="img"
-                                    class="img-fluid mb-3">
-                              <div class="grid"><a class="btn btn-outline-secondary"
-                                          href="https://1.envato.market/zNkqj6" target="_blank">Check Now</a></div>
+                <p class="mb-3">Today</p>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="items-center flex wrap gap-2 mb-3">
+                            <div class="badge text-success-500 bg-success-500/10 text-sm">Big News</div>
+                            <p class="mb-0">2 min ago</p>
+                            <span class="badge bg-warning-500 p-1"></span>
                         </div>
-                  </div>
-                  <div class="card mb-3">
-                        <div class="card-body">
-                              <div class="items-center flex wrap gap-2 mb-3">
-                                    <div class="badge text-warning-500 bg-warning-500/10 text-sm">Offer</div>
-                                    <p class="mb-0 text-muted">2 hour ago</p><span class="badge bg-warning p-1"></span>
-                              </div>
-                              <h5 class="mb-3">Able Pro is in best offer price</h5>
-                              <p class="text-muted mb-3">Download Able Pro exclusive on themeforest with best price.</p>
-                              <a href="https://1.envato.market/zNkqj6" target="_blank"><img
-                                          src="./assets/images/layout/img-announcement-2.png" alt="img"
-                                          class="img-fluid"></a>
+                        <h5 class="mb-3">Able Pro is Redesigned</h5>
+                        <p class="text-muted mb-3">Able Pro is completely renowed with high aesthetics User Interface.</p>
+                        <img src="./assets/images/layout/img-announcement-1.png" alt="img" class="img-fluid mb-3" />
+                        <div class="grid"><a class="btn btn-outline-secondary" href="https://1.envato.market/zNkqj6" target="_blank">Check Now</a></div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="items-center flex wrap gap-2 mb-3">
+                            <div class="badge text-warning-500 bg-warning-500/10 text-sm">Offer</div>
+                            <p class="mb-0 text-muted">2 hour ago</p>
+                            <span class="badge bg-warning p-1"></span>
                         </div>
-                  </div>
-                  <p class="text-span mb-3 mt-4">Yesterday</p>
-                  <div class="card mb-3">
-                        <div class="card-body">
-                              <div class="items-center flex wrap gap-2 mb-3">
-                                    <div class="badge text-primary-500 bg-primary-500/10 text-sm">Blog</div>
-                                    <p class="mb-0 text-muted">12 hour ago</p><span class="badge bg-warning p-1"></span>
-                              </div>
-                              <h5 class="mb-3">Featured Dashboard Template</h5>
-                              <p class="text-muted mb-3">Do you know Able Pro is one of the featured dashboard template
-                                    selected by Themeforest team.?</p><img
-                                    src="./assets/images/layout/img-announcement-3.png" alt="img" class="img-fluid">
+                        <h5 class="mb-3">Able Pro is in best offer price</h5>
+                        <p class="text-muted mb-3">Download Able Pro exclusive on themeforest with best price.</p>
+                        <a href="https://1.envato.market/zNkqj6" target="_blank"><img src="./assets/images/layout/img-announcement-2.png" alt="img" class="img-fluid" /></a>
+                    </div>
+                </div>
+                <p class="text-span mb-3 mt-4">Yesterday</p>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="items-center flex wrap gap-2 mb-3">
+                            <div class="badge text-primary-500 bg-primary-500/10 text-sm">Blog</div>
+                            <p class="mb-0 text-muted">12 hour ago</p>
+                            <span class="badge bg-warning p-1"></span>
                         </div>
-                  </div>
-                  <div class="card mb-3">
-                        <div class="card-body">
-                              <div class="items-center flex wrap gap-2 mb-3">
-                                    <div class="badge text-primary-500 bg-primary-500/10 text-sm">Announcement</div>
-                                    <p class="mb-0 text-muted">12 hour ago</p><span class="badge bg-warning p-1"></span>
-                              </div>
-                              <h5 class="mb-3">Buy Once - Get Free Updated lifetime</h5>
-                              <p class="text-muted mb-3">Get the lifetime free updates once you purchase the Able Pro.
-                              </p><img src="./assets/images/layout/img-announcement-4.png" alt="img" class="img-fluid">
+                        <h5 class="mb-3">Featured Dashboard Template</h5>
+                        <p class="text-muted mb-3">Do you know Able Pro is one of the featured dashboard template selected by Themeforest team.?</p>
+                        <img src="./assets/images/layout/img-announcement-3.png" alt="img" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="items-center flex wrap gap-2 mb-3">
+                            <div class="badge text-primary-500 bg-primary-500/10 text-sm">Announcement</div>
+                            <p class="mb-0 text-muted">12 hour ago</p>
+                            <span class="badge bg-warning p-1"></span>
                         </div>
-                  </div>
+                        <h5 class="mb-3">Buy Once - Get Free Updated lifetime</h5>
+                        <p class="text-muted mb-3">Get the lifetime free updates once you purchase the Able Pro.</p>
+                        <img src="./assets/images/layout/img-announcement-4.png" alt="img" class="img-fluid" />
+                    </div>
+                </div>
             </div>
-      </div><!-- [ Header ] end --><!-- [ Main Content ] start -->
-      <div class="pc-container">
-            <div class="pc-content"><!-- [ breadcrumb ] start -->
-                  <div class="page-header">
-                        <div class="page-block">
-                              <ul class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="javascript: void(0)">Size List</a></li>
-                              </ul>
-                              <div class="page-header-title">
-                                    <h2 class="mb-0">Size List</h2>
-                              </div>
-                        </div>
-                  </div>
-                  <div class="grid grid-cols-12 gap-6"><!-- Base Style table start -->
-                        <div class="col-span-12">
-                              <div class="card">
-                                    <div class="card-body">
-                                          <div class="dt-responsive table-responsive">
-                                                <table id="base-style"
-                                                      class="table table-striped table-bordered nowrap">
-                                                      <thead>
-                                                            <tr>
-                                                                  <th>No</th>
-                                                                  <th>Size Name</th>
-                                                                  <th>Sequence</th>
-                                                                  <th>Description</th>
-                                                                  <th>Action</th>
-                                                            </tr>
-                                                      </thead>
-                                                      <tbody>
-                                                            <tr>
-                                                                  <td>1</td>
-                                                                  <td>Small</td>
-                                                                  <td>1</td>
-                                                                  <td>Suitable for compact products</td>
-                                                                  <td class="d-flex align-items-center">
-                                                                    <a href="add-size.html" title="Edit" class="me-2">
-                                                                        <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-warning-500/10 text-warning-500">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit icon-svg-success wid-20"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="javascript:void(0)" title="Delete" onclick="confirmDelete()">
-                                                                        <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-primary-500/10 text-primary-500">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2 icon-svg-danger wid-20"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                                                                        </div>
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                  <td>2</td>
-                                                                 <td>Medium</td>
-                                                                 <td>2</td>
-                                                                 <td>Balanced option for most products</td>
-                                                                  <td class="d-flex align-items-center">
-                                                                    <a href="add-size.html" title="Edit" class="me-2">
-                                                                        <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-warning-500/10 text-warning-500">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit icon-svg-success wid-20"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="javascript:void(0)" title="Delete" onclick="confirmDelete()">
-                                                                        <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-primary-500/10 text-primary-500">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2 icon-svg-danger wid-20"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                                                                        </div>
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                      </tbody>
-                                                     
+        </div>
+        <!-- [ Header ] end --><!-- [ Main Content ] start -->
+        <div class="pc-container">
+            <div class="pc-content">
+                <div class="flex mb-4 flex-col md:flex-row items-start md:items-center justify-between w-full gap-4">
+                     <!-- Left: Title -->
+                     <h2 class="text-xl font-semibold">Size List</h2>
+                                     
+                     <!-- Right: Search + Add Button -->
+                     <div class="flex items-center gap-3">
+                       <!-- Search -->
+                         <form class="form-search relative"><i class="search-icon absolute top-[14px] left-[15px]"><svg class="pc-icon w-4 h-4">
+                                                 <use xlink:href="#custom-search-normal-1"></use>
+                                           </svg> </i><input type="search" class="form-control px-2.5 pr-3 pl-10 w-[198px] leading-none" placeholder="Ctrl + K"></form>
+                   
+                       <!-- Add Inspector Button -->
+                      <a class="btn btn-primary f-w-500" href="add-size.html">
+                           <i class="fa fa-plus pe-2"></i>Add Size 
+                         </a>
+                     </div>
+                   
+                   </div>
+                <div class="grid grid-cols-12 gap-6">
+                    <!-- Base Style table start -->
+                    <div class="col-span-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="dt-responsive table-responsive">
+                                    <div id="table-style-hover_wrapper" class="dt-container dt-bootstrap5">
+                                        <div class="row mt-2 justify-content-between">
+                                            <div class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                                <div class="dt-length">
+                                                    <select aria-controls="table-style-hover" class="form-select form-select-sm" id="dt-length-3">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>
+                                                    <label for="dt-length-3"> entries per page</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                                <div class="dt-search">
+                                                    <label for="dt-search-3">Search:</label><input type="search" class="form-control form-control-sm" id="dt-search-3" placeholder="" aria-controls="table-style-hover" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2 justify-content-between dt-layout-table">
+                                            <div class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                                                <table id="table-style-hover" class="table table-striped table-hover table-bordered nowrap dataTable" aria-describedby="table-style-hover_info" style="width: 100%;">
+                                                    <colgroup>
+                                                        <col data-dt-column="0" style="width: 218.062px;" />
+                                                        <col data-dt-column="1" style="width: 297.075px;" />
+                                                        <col data-dt-column="2" style="width: 161.3px;" />
+                                                        <col data-dt-column="3" style="width: 102.988px;" />
+                                                        <col data-dt-column="4" style="width: 176.7px;" />
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th data-dt-column="0" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc dt-ordering-asc" aria-sort="ascending">
+                                                                <div class="dt-column-header">
+                                                                    <span class="dt-column-title">No</span><span class="dt-column-order" role="button" aria-label="Name: Activate to invert sorting" tabindex="0"></span>
+                                                                </div>
+                                                            </th>
+                                                            <th data-dt-column="1" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc">
+                                                                <div class="dt-column-header">
+                                                                    <span class="dt-column-title">Size Name</span><span class="dt-column-order" role="button" aria-label="Position: Activate to sort" tabindex="0"></span>
+                                                                </div>
+                                                            </th>
+                                                            <th data-dt-column="2" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc">
+                                                                <div class="dt-column-header">
+                                                                    <span class="dt-column-title">Sequence</span><span class="dt-column-order" role="button" aria-label="Office: Activate to sort" tabindex="0"></span>
+                                                                </div>
+                                                            </th>
+                                                            <th data-dt-column="3" rowspan="1" colspan="1" class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                                <div class="dt-column-header"><span class="dt-column-title">Description</span><span class="dt-column-order" role="button" aria-label="Age: Activate to sort" tabindex="0"></span></div>
+                                                            </th>
+                                                            <th data-dt-column="5" rowspan="1" colspan="1" class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                                <div class="dt-column-header">
+                                                                    <span class="dt-column-title">Action</span><span class="dt-column-order" role="button" aria-label="Salary: Activate to sort" tabindex="0"></span>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="sorting_1">1</td>
+                                                            <td>Medium</td>
+                                                            <td>1</td>  
+                                                            <td class="dt-type-numeric">	Suitable for compact products</td>
+                                                            <td class="d-flex align-items-center">
+                                                    <a href="add-size.html" title="Edit" class="me-2">
+                                                        <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-warning-500/10 text-warning-500">
+                                                            <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="feather feather-edit icon-svg-success wid-20">
+                                                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:void(0)" title="Delete" onclick="confirmDelete()">
+                                                          <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-danger-500/10 text-danger-500">
+                                                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                                                  <polyline points="3 6 5 6 21 6"></polyline>
+                                                                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                  <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                  <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                              </svg>
+                                                          </div>
+                                                      </a>
+                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="sorting_1">2</td>
+                                                            <td>small</td>
+                                                            <td>1</td>  
+                                                            <td class="dt-type-numeric">Balanced option for most products</td>
+                                                            <td class="d-flex align-items-center">
+                                                    <a href="add-size.html" title="Edit" class="me-2">
+                                                        <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-warning-500/10 text-warning-500">
+                                                            <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="feather feather-edit icon-svg-success wid-20">
+                                                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:void(0)" title="Delete" onclick="confirmDelete()">
+                                                          <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-danger-500/10 text-danger-500">
+                                                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                                                  <polyline points="3 6 5 6 21 6"></polyline>
+                                                                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                  <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                  <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                              </svg>
+                                                          </div>
+                                                      </a>
+                                                </td>
+                                                        </tr>
+                                                    </tbody>
                                                 </table>
-                                          </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2 justify-content-between">
+                                            <div class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                                <div class="dt-info" aria-live="polite" id="table-style-hover_info" role="status">
+                                                    Showing 1 to 10 of 30 entries
+                                                </div>
+                                            </div>
+                                            <div class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                                <div class="dt-paging">
+                                                    <nav aria-label="pagination">
+                                                        <ul class="pagination">
+                                                            <li class="dt-paging-button page-item disabled">
+                                                                <button class="page-link first" role="link" type="button" aria-controls="table-style-hover" aria-disabled="true" aria-label="First" data-dt-idx="first" tabindex="-1">«</button>
+                                                            </li>
+                                                            <li class="dt-paging-button page-item disabled">
+                                                                <button class="page-link previous" role="link" type="button" aria-controls="table-style-hover" aria-disabled="true" aria-label="Previous" data-dt-idx="previous" tabindex="-1">
+                                                                    ‹
+                                                                </button>
+                                                            </li>
+                                                            <li class="dt-paging-button page-item active">
+                                                                <button class="page-link" role="link" type="button" aria-controls="table-style-hover" aria-current="page" data-dt-idx="0">1</button>
+                                                            </li>
+                                                            <li class="dt-paging-button page-item">
+                                                                <button class="page-link" role="link" type="button" aria-controls="table-style-hover" data-dt-idx="1">2</button>
+                                                            </li>
+                                                            <li class="dt-paging-button page-item">
+                                                                <button class="page-link" role="link" type="button" aria-controls="table-style-hover" data-dt-idx="2">3</button>
+                                                            </li>
+                                                            <li class="dt-paging-button page-item">
+                                                                <button class="page-link next" role="link" type="button" aria-controls="table-style-hover" aria-label="Next" data-dt-idx="next">›</button>
+                                                            </li>
+                                                            <li class="dt-paging-button page-item">
+                                                                <button class="page-link last" role="link" type="button" aria-controls="table-style-hover" aria-label="Last" data-dt-idx="last">»</button>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
                                     </div>
-                              </div>
+                                </div>
+                            </div>
                         </div>
-                  </div><!-- [ Main Content ] end -->
+                    </div>
+                </div>
+                <!-- [ Main Content ] end -->
             </div>
-      </div><!-- [ Main Content ] end -->
-      <footer class="pc-footer">
+        </div>
+        <!-- [ Main Content ] end -->
+          <footer class="pc-footer">
             <div class="footer-wrapper container-fluid mx-10">
                   <div class="grid grid-cols-12 gap-1.5">
                         <div class="col-span-12 sm:col-span-6 my-1">
@@ -314,44 +421,60 @@
                                     target="_blank">The Unique IT Solution</a>
                               <p></p>
                         </div>
-                        
                   </div>
             </div>
       </footer><!-- Required Js -->
-      <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-      <script src="./assets/js/plugins/simplebar.min.js"></script>
-      <script src="./assets/js/plugins/popper.min.js"></script>
-      <script src="./assets/js/plugins/i18next.min.js"></script>
-      <script src="./assets/js/plugins/i18nextHttpBackend.min.js"></script>
-      <script src="./assets/js/icon/custom-font.js"></script>
-      <script src="./assets/js/plugins/feather.min.js"></script>
-      <script src="./assets/js/component.js"></script>
-      <script src="./assets/js/theme.js"></script>
-      <script src="./assets/js/multi-lang.js"></script>
-      <script src="./assets/js/script.js"></script>
-     
-      <script>layout_change('false');</script>
-      <script>layout_theme_contrast_change('false');</script>
-      <script>change_box_container('false');</script>
-      <script>layout_caption_change('true');</script>
-      <script>layout_rtl_change('false');</script>
-      <script>preset_change('preset-1');</script>
-      <script>main_layout_change('vertical');</script><!-- [Page Specific JS] start --><!-- datatable Js -->
-      <script src="../../ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="./assets/js/plugins/dataTables.min.js"></script>
-      <script src="./assets/js/plugins/dataTables.bootstrap5.min.js"></script>
-      <script>// [ base style ]
-            $('#base-style').DataTable();
+        <!-- Required Js -->
+        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="./assets/js/plugins/simplebar.min.js"></script>
+        <script src="./assets/js/plugins/popper.min.js"></script>
+        <script src="./assets/js/plugins/i18next.min.js"></script>
+        <script src="./assets/js/plugins/i18nextHttpBackend.min.js"></script>
+        <script src="./assets/js/icon/custom-font.js"></script>
+        <script src="./assets/js/plugins/feather.min.js"></script>
+        <script src="./assets/js/component.js"></script>
+        <script src="./assets/js/theme.js"></script>
+        <script src="./assets/js/multi-lang.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <script>
+            layout_change("false");
+        </script>
+        <script>
+            layout_theme_contrast_change("false");
+        </script>
+        <script>
+            change_box_container("false");
+        </script>
+        <script>
+            layout_caption_change("true");
+        </script>
+        <script>
+            layout_rtl_change("false");
+        </script>
+        <script>
+            preset_change("preset-1");
+        </script>
+        <script>
+            main_layout_change("vertical");
+        </script>
+        <!-- [Page Specific JS] start --><!-- datatable Js -->
+        <script src="../../ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./assets/js/plugins/dataTables.min.js"></script>
+        <script src="./assets/js/plugins/dataTables.bootstrap5.min.js"></script>
+        <script>
+            // [ base style ]
+            $("#base-style").DataTable();
 
             // [ no style ]
-            $('#no-style').DataTable();
+            $("#no-style").DataTable();
 
             // [ compact style ]
-            $('#compact').DataTable();
+            $("#compact").DataTable();
 
             // [ hover style ]
-            $('#table-style-hover').DataTable();</script><!-- [Page Specific JS] end -->
-    
-</body><!-- [Body] end -->
-
+            $("#table-style-hover").DataTable();
+        </script>
+        <!-- [Page Specific JS] end -->
+    </body>
+    <!-- [Body] end -->
 </html>

@@ -49,21 +49,16 @@
                         
                           <ul class="pc-navbar">
                            
-                             <li class="pc-item pc-hasmenu">
-                                  <a href="#!" class="pc-link">
-                                    <span class="pc-micon">
-                                      <span class="pc-micon"><svg class="pc-icon">
-                                                      <use xlink:href="#custom-layer"></use>
-                                                </svg> </span>
-                                    </span>
-                                    <span class="pc-mtext">Size</span>
-                                    <span class="pc-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
-                                  </a>
-                                  <ul class="pc-submenu" style="display: none;">
-                                    <li class="pc-item"><a class="pc-link" href="list-size.html">List Size</a></li>
-                                    <li class="pc-item"><a class="pc-link" href="add-size.html">Add Size</a></li>
-                                  </ul>
-                                </li>
+                             <li class="pc-item">
+                            <a href="list-size.html" class="pc-link">
+                                <span class="pc-micon">
+                                    <svg class="pc-icon">
+                                            <use xlink:href="#custom-layer"></use>
+                                        </svg>
+                                </span>
+                                <span class="pc-mtext">Size</span>
+                            </a>
+                        </li>
 
                               <li class="pc-item">
                                 <a href="list-inspectector.html" class="pc-link">
@@ -79,7 +74,7 @@
                                   <span class="pc-micon"><svg class="pc-icon">
                                                       <use xlink:href="#custom-story"></use>
                                                 </svg> </span>
-                                  <span class="pc-mtext">Inspection</span>
+                                  <span class="pc-mtext">Inspection Place</span>
                                 </a>
                               </li>
                               
@@ -230,17 +225,10 @@
       </div><!-- [ Header ] end --><!-- [ Main Content ] start -->
       <div class="pc-container">
             <div class="pc-content"><!-- [ breadcrumb ] start -->
-                  <div class="page-header">
-                        <div class="page-block">
-                              <ul class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="javascript: void(0)">Inspector List</a></li>
-                              </ul>
-                        </div>
-                  </div>
+                 
                  <div class="flex mb-4 flex-col md:flex-row items-start md:items-center justify-between w-full gap-4">
                      <!-- Left: Title -->
-                     <h2 class="text-xl font-semibold">Inspection List</h2>
+                     <h2 class="text-xl font-semibold">Inspection Place List</h2>
                                      
                      <!-- Right: Search + Add Button -->
                      <div class="flex items-center gap-3">
@@ -251,7 +239,7 @@
                    
                        <!-- Add Inspector Button -->
                       <a class="btn btn-primary f-w-500" href="add-inspection-place.html">
-                           <i class="fa fa-plus pe-2"></i>Add Inspection 
+                           <i class="fa fa-plus pe-2"></i>Add Inspection Place 
                          </a>
                      </div>
                    
@@ -282,10 +270,15 @@
                                                       </div>
                                                   </a>
                                                   <a href="javascript:void(0)" title="Delete" onclick="confirmDelete()">
-                                                      <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-primary-500/10 text-primary-500">
-                                                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2 icon-svg-danger wid-20"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                                                      </div>
-                                                  </a>
+                                                          <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-danger-500/10 text-danger-500">
+                                                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                                                  <polyline points="3 6 5 6 21 6"></polyline>
+                                                                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                  <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                  <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                              </svg>
+                                                          </div>
+                                                      </a>
                                               </td>
                                           </tr>
                                           
@@ -300,10 +293,15 @@
                                                       </div>
                                                   </a>
                                                   <a href="javascript:void(0)" title="Delete" onclick="confirmDelete()">
-                                                      <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-primary-500/10 text-primary-500">
-                                                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2 icon-svg-danger wid-20"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                                                      </div>
-                                                  </a>
+                                                          <div class="w-9 h-9 rounded-xl inline-flex items-center justify-center bg-danger-500/10 text-danger-500">
+                                                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                                                  <polyline points="3 6 5 6 21 6"></polyline>
+                                                                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                  <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                  <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                              </svg>
+                                                          </div>
+                                                      </a>
                                               </td>
                                           </tr>
                                           </tbody>
@@ -312,7 +310,45 @@
                                     </div>
                               </div>
                         </div>
-                  </div><!-- [ Main Content ] end -->
+                  </div>
+                   <div class="col-span-12">
+                          <div class="flex justify-between items-center">
+                        
+                            <!-- Left Side: Entries per page -->
+                            <div class="flex items-center gap-2">
+                              <label for="entries" class="font-medium">Entries per page:</label>
+                              <div class="btn-group">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-pc-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  10
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#!">10</a>
+                                  <a class="dropdown-item" href="#!">20</a>
+                                  <a class="dropdown-item" href="#!">30</a>
+                                </div>
+                              </div>
+                            </div>                    
+                       
+                            <!-- Right Side: Pagination -->
+                            <div class="pc-component">
+                              <nav aria-label="Page navigation">
+                                <ul class="flex *:*:inline-block *:*:px-3 *:*:py-1.5 *:border *:border-theme-border *:dark:border-themedark-border *:hover:bg-secondary-300/10">
+                                  <li class="ltr:rounded-l-lg rtl:rounded-r-lg select-none !bg-secondary-500/10"><span>Previous</span></li>
+                                  <li><a href="#!">1</a></li>
+                                  <li class="!bg-primary-500 !text-white !border-primary-500">
+                                    <span>
+                                      2
+                                      <span class="sr-only">(current)</span>
+                                    </span>
+                                  </li>
+                                  <li><a href="#!">3</a></li>
+                                  <li class="ltr:rounded-r-lg rtl:rounded-l-lg"><a href="#!">Next</a></li>
+                                </ul>
+                              </nav>
+                            </div>                    
+
+                          </div>
+                        </div>
             </div>
       </div><!-- [ Main Content ] end -->
       <footer class="pc-footer">
