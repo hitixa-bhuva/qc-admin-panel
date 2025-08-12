@@ -13443,3 +13443,19 @@ table.\!dataTable thead tr >.dtfc-fixed-start:is([data-pc-theme="dark"] *),table
     width: 33.333% !important;
 
   }
+    /* Arrow movement animation */
+  .arrow-animate polyline:first-child {
+    animation: arrowMoveRight 1s infinite alternate ease-in-out;
+  }
+  .arrow-animate polyline:last-child {
+    animation: arrowMoveLeft 1s infinite alternate ease-in-out;
+  }
+
+  @keyframes arrowMoveRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(3px); }
+  }
+  @keyframes arrowMoveLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-3px); }
+  }
