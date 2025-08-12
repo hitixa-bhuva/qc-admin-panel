@@ -610,12 +610,12 @@ h6,.h6{
   font-size: 14px;
   font-weight: 600;
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,{
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   line-height: 1.2;
   --tw-text-opacity: 1;
   color: rgb(29 38 48 / var(--tw-text-opacity));
 }
-h1:is([data-pc-theme="dark"] *), h2:is([data-pc-theme="dark"] *), h3:is([data-pc-theme="dark"] *), h4:is([data-pc-theme="dark"] *), h5:is([data-pc-theme="dark"] *), h6:is([data-pc-theme="dark"] *), .h1:is([data-pc-theme="dark"] *), .h2:is([data-pc-theme="dark"] *), .h3:is([data-pc-theme="dark"] *), .h4:is([data-pc-theme="dark"] *), .h5:is([data-pc-theme="dark"] *), .h6:is([data-pc-theme="dark"] *),{
+h1:is([data-pc-theme="dark"] *), h2:is([data-pc-theme="dark"] *), h3:is([data-pc-theme="dark"] *), h4:is([data-pc-theme="dark"] *), h5:is([data-pc-theme="dark"] *), h6:is([data-pc-theme="dark"] *), .h1:is([data-pc-theme="dark"] *), .h2:is([data-pc-theme="dark"] *), .h3:is([data-pc-theme="dark"] *), .h4:is([data-pc-theme="dark"] *), .h5:is([data-pc-theme="dark"] *), .h6:is([data-pc-theme="dark"] *){
   color: rgba(255, 255, 255, 0.8);
 }
 body{
@@ -1992,7 +1992,7 @@ text:is([data-pc-theme="dark"] *),.apexcharts-theme-light .apexcharts-menu-icon:
 [data-pc-layout="compact"] .pc-sidebar.pc-sidebar-hide ~ .pc-footer, [data-pc-layout="compact"] .pc-sidebar.pc-sidebar-hide ~ .pc-container{
   margin-left: 0px;
 }
-[data-pc-layout="compact"] .pc-sidebar.pc-sidebar-hide .pc-navbar > .pc-item.pc-hasmenu.pc-trigger > > .pc-submenu{
+[data-pc-layout="compact"] .pc-sidebar.pc-sidebar-hide .pc-navbar > .pc-item.pc-hasmenu.pc-trigger >  .pc-submenu{
   display: none !important;
 }
 [data-pc-layout="compact"] .pc-sidebar .pc-badge,[data-pc-layout="compact"] .pc-sidebar .pc-caption,[data-pc-layout="compact"] .pc-sidebar .pc-mtext,[data-pc-layout="compact"] .pc-sidebar .pc-navbar > li > a > .pc-arrow{
@@ -3895,7 +3895,7 @@ text:is([data-pc-theme="dark"] *),.apexcharts-theme-light .apexcharts-menu-icon:
   border-color: rgb(231 234 238 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 5px -;
+  padding: 5px;
   --tw-shadow: 0 6px 12px rgba(0,0,0,.17);
   --tw-shadow-colored: 0 6px 12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -9082,7 +9082,7 @@ table.\!dataTable thead tr >.dtfc-fixed-start:is([data-pc-theme="dark"] *),table
   padding: 5px;
 }
 .p-\[5px_-\]{
-  padding: 5px -;
+  padding: 5px;
 }
 .p-\[6px_20px\]{
   padding: 6px 20px;
