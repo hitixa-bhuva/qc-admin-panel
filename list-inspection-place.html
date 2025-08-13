@@ -12,7 +12,7 @@
       <meta name="keywords"
             content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard">
       <meta name="author" content="Phoenixcoded"><!-- [Favicon] icon -->
-      <link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon">
+      <link rel="icon" href="./assets/images/lorence-favicon.webp" type="image/x-icon">
       <!-- [Page specific CSS] start --><!-- data tables css -->
       <link rel="stylesheet" href="./assets/css/plugins/dataTables.bootstrap5.min.css">
       <!-- [Page specific CSS] end --><!-- [Font] Family -->
@@ -42,13 +42,23 @@
             <div class="navbar-wrapper">
                   <div class="m-header flex items-center py-4 px-6 h-header-height"><a href="index.html"
                               class="b-brand flex items-center gap-3"><!-- ========   Change your logo from here   ============ -->
-                              <img src="./assets/images/logo-dark.svg" class="img-fluid logo-lg" alt="logo"> <span
+                              <img src="./assets/images/lorence-logo.png" class=" logo-sm bg-dark p-2 rounded" alt="logo"> <span
                                     class="badge bg-success-500/10 text-success-500 rounded-full theme-version">v1.1.0</span></a>
                   </div>
                   <div class="navbar-content h-[calc(100vh_-_74px)] py-2.5">
                         
-                          <ul class="pc-navbar">
-                           
+                           <ul class="pc-navbar">
+                           <li class="pc-item pc-caption">
+                              <label data-i18n="Masters">Masters</label>
+                            </li>
+                            <li class="pc-item">
+                                <a href="list-inspectector.html" class="pc-link">
+                                  <span class="pc-micon"><svg class="pc-icon">
+                                                      <use xlink:href="#custom-user"></use>
+                                                </svg> </span>
+                                  <span class="pc-mtext">Inspector</span>
+                                </a>
+                              </li>
                              <li class="pc-item">
                             <a href="list-size.html" class="pc-link">
                                 <span class="pc-micon">
@@ -61,15 +71,6 @@
                         </li>
 
                               <li class="pc-item">
-                                <a href="list-inspectector.html" class="pc-link">
-                                  <span class="pc-micon"><svg class="pc-icon">
-                                                      <use xlink:href="#custom-user"></use>
-                                                </svg> </span>
-                                  <span class="pc-mtext">Inspector</span>
-                                </a>
-                              </li>
-
-                              <li class="pc-item">
                                 <a href="list-inspection-place.html" class="pc-link">
                                   <span class="pc-micon"><svg class="pc-icon">
                                                       <use xlink:href="#custom-story"></use>
@@ -77,17 +78,10 @@
                                   <span class="pc-mtext">Inspection Place</span>
                                 </a>
                               </li>
-                              
-                              <li class="pc-item">
-                                <a href="add-generate-report.html" class="pc-link">
-                                  <span class="pc-micon"><svg class="pc-icon">
-                                                      <use xlink:href="#custom-document"></use>
-                                                </svg> </span>
-                                  <span class="pc-mtext">Generate Report</span>
-                                </a>
-                              </li>
-
-                              <li class="pc-item">
+                              <li class="pc-item pc-caption">
+                              <label data-i18n="Reports">Reports</label>
+                            </li>
+                            <li class="pc-item">
                                 <a href="list-generate-report.html" class="pc-link">
                                   <span class="pc-micon"><svg class="pc-icon">
                                                       <use xlink:href="#custom-bill"></use>
@@ -95,13 +89,20 @@
                                   <span class="pc-mtext">Working Report</span>
                                 </a>
                               </li>
-
-                              <li class="pc-item">
+                               <li class="pc-item">
                                 <a href="list-complate-reports.html" class="pc-link">
                                   <span class="pc-micon"><svg class="pc-icon">
                                                       <use xlink:href="#custom-24-support"></use>
                                                 </svg> </span>
                                   <span class="pc-mtext">Complete Report</span>
+                                </a>
+                              </li>
+                              <li class="pc-item">
+                                <a href="add-generate-report.html" class="pc-link">
+                                  <span class="pc-micon"><svg class="pc-icon">
+                                                      <use xlink:href="#custom-document"></use>
+                                                </svg> </span>
+                                  <span class="pc-mtext">Generate Report</span>
                                 </a>
                               </li>
                         </ul>

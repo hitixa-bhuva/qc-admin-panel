@@ -13471,3 +13471,6 @@ table.\!dataTable thead tr >.dtfc-fixed-start:is([data-pc-theme="dark"] *),table
     0% { transform: translateX(0); }
     100% { transform: translateX(-3px); }
   }
+.logo-sm{
+  width: 50%;
+}
